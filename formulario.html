@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Mario Jose Sanchez Rodriguez">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>FORMULARIOS</h1>
+    <!--Formulario basico
+action:a donde se envia || method:get (pasa los datos por la URL)//post(oculto en el cuerpo de los paquetes HTTP)
+label for: id del input al que quiero referencia|| name=clave del dato enviado-->
+<form action="" method="get">
+<label for="campo1">Introduce tu nombre</label><br>
+<input type="text" name="nombrePersona" id="campo1">
+<input type="submit" name="" value="Entregar">
+</form>
+<hr>
+<hr>
+<hr>
+<hr>
+<!--TIPOS DE INPUTS-->
+<form action="" method="get">
+Texto: <input type="text" name="texto"><br>
+Contraseña: <input type="password" name="contrasenia" step="20" ><br>
+Numero: <input type="number" name="numero"><br>
+Correo: <input type="email" name="email"><br>
+Telefono: <input type="tel" name="telefono"><br>
+Fecha: <input type="date" name="fecha"><br>
+Hora: <input type="time" name="hora"><br>
+<input type="submit" value="ENTREGAR">
+</form>
+<hr>
+<hr>
+<hr>
+<hr>
+
+<!--ATRIBUTOS BASICOS:
+value
+placeholder
+required
+minlength
+maxlength
+min
+max 
+size
+-->
+<form action="" method="get"><br>
+USUARIO:<input type="text" name="usuario" value="Pepe" minlength="3" maxlength="8"><br>
+EDAD:<input type="number" name="edad"min="18" max="67"><br>
+CIUDAD:<input type="text"name="ciudad"placeholder="Introduce ciudad donde vives" size="50"><br>
+COMENTARIO:<input type="text"name="comentario" required><br>
+<textarea name="comentario" cols="20" rows="5" placeholder="Introduce tu comentario (positivo please)">Hola</textarea><br>
+<input type="submit" value="ENTREGAR">
+</form>
+<hr>
+<hr>
+<hr>
+<hr>
+<!--CHECKBOX Y RADIO-->
+<form action="" method="get">
+DEPORTE:<input type="checkbox" name="deporte" value="si"><br>
+LECTURA:<input type="checkbox" name="lectura"value="si"><br>
+MUSICA:<input type="checkbox" name="musica" value="si"><br>
+DAW<input type="radio" name="fp" value="daw"><br>
+
+DAM<input type="radio" name="fp" value="dam"><br>
+
+ASIR<input type="radio" name="fp" value="asir"><br>
+<br><br><br>
+CIUDAD:<select name="Provincia" required>
+    <option disabled selected>--SELECCIONA--</option>
+    <option value="MALAGA">MÁLAGA</option>
+    <option value="GRANADA">GRANADA</option>
+    <option value="CADIZ">CÁDIZ</option>
+    <option value="SEVILLA">SEVILLA</option>
+    <option value="HUELVA">HUELVA</option>
+    <option value="CORDOBA">CÓRDOBA</option>
+    <option value="ALMERIA">ALMERÍA</option>
+    <option value="JAEN">JAÉN</option>
+</select>
+<input type="submit" value="ENVIAR">
+</form>
+<hr>
+<hr>
+<hr>
+
+<!--
+    ESTADOS:
+disabled: no editable y no se envia
+readonly: no editable y si se envia
+autofocus: cursor al cargar la pagina    
+-->
+<form action="" method="get">
+Normal: <input type="text" name="Normal" value="editable"><br>
+Disable: <input type="text" name="Deshabilitado" disabled value="disable"><br>
+Readonly: <input type="text" name="lectura" value="readonly" readonly>
+Autofocus: <input type="text" name="foco" autofocus>
+<input type="submit" value="ENVIAR">
+</form>
+
+<!--TABINDEX-->
+<hr>
+<hr>
+<hr>
+<form action="" method="post">
+
+Tercero: <input type="text" name="c3" tabindex="3"><br>
+Octavo: <input type="text" name="c8" tabindex="8"><br>
+Septimo: <input type="text" name="c7" tabindex="7"><br>
+Sexto: <input type="text" name="c6" tabindex="6"><br>
+Quinto: <input type="text" name="c5" tabindex="5"><br>
+Cuarto: <input type="text" name="c4" tabindex="4"><br>
+Segundo: <input type="text" name="c2" tabindex="2"><br>
+PRIMERO SIUU<input type="submit" value="ENVIAR" tabindex="1"> 
+</form>
+<hr>
+<hr>
+<hr>
+<!--
+BOTONES+FIELDSET+LEGEND-->
+<form action="" method="post"></form>
+<fieldset style="background-color: antiquewhite;">
+    <legend>Datos Personales</legend>
+        Nombre: <input type="text" name="nombre"><br>
+        Apellidos: <input type="text" name="apellidos"><br>
+</fieldset>
+<fieldset style="background-color: aquamarine;">
+    <legend>Botones pa envia'</legend>
+    <input type="submit" value="SUBMIT">
+    <input type="reset" value="RESETEO">
+    <button>ENVIAR</button>
+    <input type="button" value="JS" onclick="Alert (necesito el gta VI ya)">
+</fieldset>
+
+</body>
+</html>
